@@ -14,15 +14,7 @@ const tomorrow = formattedDate(
 );
 
 // eslint-disable-next-line no-unused-vars
-const {
-  all,
-  add,
-  markAsComplete,
-  overdue,
-  dueToday,
-  dueLater,
-  toDisplayableList,
-} = todoList();
+const { all, add, markAsComplete, overdue, dueToday, dueLater } = todoList();
 
 describe("Todolist test suit", () => {
   beforeAll(() => {
@@ -54,7 +46,6 @@ describe("Todolist test suit", () => {
         dueDate: tomorrow,
       });
     }
-    console.log(toDisplayableList(all));
   });
 
   test("should add new todo", () => {
